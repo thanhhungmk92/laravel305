@@ -11,10 +11,18 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::post('/postUpload','ProductImageController@uploads');
+Route::get('sweetalert','ProductImageController@index');
 Route::get('warning',function() {
 	echo " Không có gì quí hơn độc lập tự do2";
 });
+
+Route::get('uploadImage',function() {
+	return view('page.uploadImage');
+});
+
+
