@@ -24,6 +24,7 @@
 			</div>
 		
 		</div>
+		<a href="{{route('route',['id' => 1992, 'name' => 'Thanh Hung'])}}">Route </a>
 	</div>
 	<script src="source/sweetalert2/dist/sweetalert2.all.min.js"></script>
 	<script>

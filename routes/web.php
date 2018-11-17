@@ -12,6 +12,7 @@
 */
 
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -25,4 +26,13 @@ Route::get('uploadImage',function() {
 	return view('page.uploadImage');
 });
 
+Route::get('file/manager',function() {
+	return view('page.file-manager');
+});
 
+Route::get('route/name/{id}/{name}','HomeController@route')->name('route');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
